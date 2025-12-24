@@ -1,20 +1,20 @@
-# My Personal Portfolio Website
+# My Movie Search Website
 
 <img width="1385" height="1000" alt="Image" src="https://github.com/user-attachments/assets/6d2a38e4-e3c1-46f1-b23e-8f1f9104770d" />
 
-> A clean, modern, and fully responsive personal portfolio website built from scratch with React, Vite, and Tailwind CSS. This project showcases my skills, my work, and serves as my primary point of contact for potential clients and employers.
+> > A dynamic movie search application built with React, allowing users to search for movies via the OMDb API and view detailed information.
 
-**Live Demo:** **Live Demo:** [movie-search-app.netlify.app](https://movie-search-app11.netlify.app/)
+**Live Demo:** **Live Demo:** [arminshami7.github.io/movie-search-app](https://arminshami7.github.io/movie-search-app/)
 
 ---
 
 ## 🚀 Features
 
--   **Fully Responsive Design:** Looks great on all devices, from mobile phones to desktops.
--   **Single Page Application (SPA):** A smooth, fast, and seamless user experience with no page reloads.
--   **Smooth Scrolling:** Clean navigation between different sections of the page.
--   **Interactive UI:** Subtle hover effects and transitions to enhance user experience.
--   **Component-Based Architecture:** Built with reusable and maintainable React components.
+-   **Dynamic Search:** Search for movies in real-time using the OMDb API.
+-   **Multi-Page Navigation:** Seamlessly navigate between the search page and movie detail pages without page reloads, thanks to React Router.
+-   **Detailed Movie View:** Click on any movie to see its detailed information, fetched dynamically based on the URL parameter.
+-   **Robust UI States:** Clear feedback is provided to the user for loading, error, and no-result states.
+-   **Responsive Design:** The interface is fully responsive and works well on desktops, tablets, and mobile devices.
 
 ---
 
@@ -29,7 +29,8 @@ This project was built using the following technologies:
 -   **Routing:**
     -   [**React Router**](https://reactrouter.com/): For declarative routing in a single-page application.
 -   **Deployment:**
-    -   [**Netlify**](https://www.netlify.com/): For continuous deployment and hosting.
+    -   [**GitHub Pages**](https://pages.github.com/): For hosting the static site.
+    -   [**GitHub Actions**](https://github.com/features/actions): For automating the build and deployment process (CI/CD).```
 -   **Version Control:**
     -   [**Git & GitHub**](https://github.com/arminshami7/front-end/tree/main/docs/projects/movie-search-app): For source code management.
 
@@ -37,12 +38,17 @@ This project was built using the following technologies:
 
 ## 📝 What I Learned
 
-Building this portfolio was a fantastic learning experience. Here are some of the key takeaways:
+This project was my first deep dive into building a data-driven, multi-page application with React. It was a crucial step in my learning journey, and here are the key skills I developed:
 
--   **Deepened my understanding of Tailwind CSS:** I moved from basic utility classes to building complex, responsive layouts and custom components.
--   **Reinforced React fundamentals:** I solidified my knowledge of component architecture, props, and state management.
--   **Gained experience in project planning:** From initial wireframing to final deployment, I managed the entire project lifecycle.
--   **Learned the importance of a professional online presence** for a developer.
+-   **Working with External APIs:** I learned how to make asynchronous requests to a real-world API (OMDb API) using `fetch` and `async/await` inside a `useEffect` hook.
+
+-   **Advanced State Management:** I went beyond simple `useState` and learned to manage multiple states simultaneously, including `isLoading`, `error`, and the fetched data itself. This taught me how to create a robust and user-friendly experience by handling all possible UI states.
+
+-   **Dynamic Routing with React Router:** This was my first experience with dynamic routes. I learned how to create routes with parameters (e.g., `/movie/:id`) and use the `useParams` hook to fetch and display data for a specific item.
+
+-   **Component-Based Architecture:** I practiced breaking down the UI into reusable components like `MovieCard`, which made the code cleaner, more organized, and easier to maintain.
+
+-   **Defensive Coding:** I learned to anticipate and handle potential issues, such as API errors or searches with no results, to prevent the application from crashing and provide clear feedback to the user.
 
 ---
 
@@ -59,7 +65,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repo
     ```sh
-    https://github.com/arminshami7/front-end/tree/main/docs/projects/movie-search-app
+    [**Git & GitHub**](https://github.com/arminshami7/movie-search-app)
     ```
 2.  Install NPM packages
     ```sh
