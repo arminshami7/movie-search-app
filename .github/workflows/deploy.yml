@@ -13,12 +13,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3 # قدم اول: کد تو رو از ریپازیتوری دانلود می‌کنه
 
-      -name: Install and Build 🔧
-  env: # <-- این بخش جدید رو اضافه کن
-    VITE_OMDB_API_KEY: ${{ secrets.VITE_OMDB_API_KEY }}
-  run: |
-    npm install
-    npm run build # قدم دوم: پروژه رو Build می‌کنه (پوشه dist ساخته میشه)
+      - name: Install and Build 🔧
+        env: # <-- این بخش جدید رو اضافه کن
+          VITE_OMDB_API_KEY: ${{ secrets.VITE_OMDB_API_KEY }}
+        run: |
+          npm install
+          npm run build # قدم دوم: پروژه رو Build می‌کنه (پوشه dist ساختته میشه)
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
